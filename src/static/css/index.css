@@ -4,7 +4,7 @@
 body{
     margin: 0%;
     padding: 0%;
- background-color: #000;
+    background-color: #0c111b;
 }
 
 
@@ -20,7 +20,7 @@ body{
    align-items: center;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    font-weight: 100;
- 
+   
  
 }
 .list-nav{
@@ -30,8 +30,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+   
 }
 .list-nav li{
 
@@ -82,7 +82,7 @@ body{
 
 .contactos{
   
-    top: 30%;
+    top: 33%;
     position: fixed;
     height: 450px;
     width:  40px;
