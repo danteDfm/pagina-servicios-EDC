@@ -1,0 +1,113 @@
+.servicios{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    background-size: cover;
+}
+.card_servicios{
+    border: 1px red solid;
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    height: 400px;
+  
+    color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+    transition: transform 0.5s ease;
+
+    background-color: rgba(10, 18, 36, 0.686);
+    box-shadow: 0px 0px 1px white ;
+
+
+}
+.card:hover{
+    transform:translateY(-5px);
+    
+    cursor: pointer;
+}
+.img_card{
+   width: 100%;
+   height: 45%;
+  
+}
+.img_card img{
+
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.descripcion_card{
+    width: 100%;
+    height: 55%;
+ 
+    
+}
+.descripcion_card .title_card{
+    width: 100%;
+    height: 30%;
+    margin: 0%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.descripcion_card .title_card .title_card-h1 , .title_card-p{
+   
+    margin: 0%;
+    padding: 0%;
+ 
+    width: 100%;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.descripcion_card .descripcion_card_content{
+    width: 100%;
+    height: 60%;
+    margin: 0%;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.descripcion_card .descripcion_card_content p{
+    
+    padding: 20px;
+ 
+    margin: 0%;
+    height: 100%;
+    
+}
+.descripcion_card .foot_card{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+   
+    
+    padding: 0%;
+    text-align: end;
+    
+}
+.descripcion_card .foot_card p{
+  
+    margin: 0%;
+    padding: 0%;
+    margin-right: 10px;
+    
+}
