@@ -119,7 +119,7 @@ body{
 }
 
 
-@media(max-width:1226px){
+@media(max-width:1000px){
     .list-nav{
         display: none;
     }
