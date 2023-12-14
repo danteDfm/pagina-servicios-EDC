@@ -43,7 +43,8 @@
 }
 
 .title_main h1{
-    font-family: 'Karma', serif;
+  
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 70px;
     font-weight: bold;
@@ -52,9 +53,9 @@
     white-space: nowrap;
     border-right: 4px solid;
     margin: 0%;
-    width: 16ch;
+    width: 13ch;
 
-    animation: typing 2s steps(16), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(13), blink .5s infinite step-end alternate;
     overflow: hidden;
     
 }
@@ -81,6 +82,7 @@
 .ms_informacion:hover{
  
     background-color: rgb(165, 20, 93);
+    transform: scale(1.04);
 
 }
 
