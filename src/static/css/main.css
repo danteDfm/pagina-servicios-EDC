@@ -3,9 +3,9 @@
     height: 100vh;
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-image: url("../img/universo2.jpg");
+    background-image: url("../img/universo22.jpg");
    background-position: center;
     background-size: cover;
    
@@ -17,18 +17,18 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #10172570;
+    background-color: #10172542;
 }
 
 .title_main{
-    width: 100%;
+    width: 50vw;
     height: 100%;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
+    
 }
 
 .title_main_content{
@@ -39,6 +39,8 @@
     align-items: center;
 
     z-index: 1;
+
+   
    
 }
 

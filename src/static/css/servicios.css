@@ -10,19 +10,30 @@
     background-size: cover;
 }
 
-.title_services{
+.content_title_servcicio{
     
-    color: rgb(255, 255, 255);
-    font-size: 35px;
-    margin-top: 80px;
-    font-family:Arial, Helvetica, sans-serif;
-    opacity: 0;
-    transform: translateX(-50px);
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    width: 80%;
+    width: 90%;
+    height: 400px;
+
+
     
-    text-align: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content_title_servcicio h1{
+    
+   font-size: 30px;
+   font-family: roboto;
+}
+.content_title_servcicio p{
+  
+    width: 700px;
+  font-size: 20px;
+  text-align: center;
 }
 
 
@@ -61,7 +72,7 @@
 
 }
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-10px);
     cursor: pointer;
 }
 
@@ -89,7 +100,7 @@
     width: 100%;
     height: 30%;
     margin: 0%;
-   
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +118,7 @@
 }
 .descripcion_card .title_card  .title_card-p{
    
-    font-size: 13px;
+    font-size: 12px;
  
 }
 .descripcion_card .descripcion_card_content{

@@ -1,5 +1,74 @@
 .presentacion{
     width: 100%;
     height: 100vh;
-    border: 1px red solid;
+   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    background-image: url("../img/pexels-piccinng-3075993.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+   position: relative;
+}
+.presentacion::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+    content: "";
+    background-color: rgba(0, 0, 0, 0.301);
+   
+}
+.content_presentacion{
+    width: 70%;
+  
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 1;
+
+
+    
+    opacity: 0;
+    transform: translateY(50px);
+   
+}
+
+
+@keyframes aparecerArriba {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+
+.content_presentacion h1{
+   font-size: 30px;
+   font-family: roboto;
+}
+.content_presentacion p{
+   font-size: 20px;
+   width: 700px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.content_presentacion button{
+   font-size: 20px;
+   width: 500px;
+   text-align: center;
+  color: white;
+   background-color: rgba(240, 248, 255, 0);
+   border: 0px;
+  transition: 1s all;
+   border: 1px white solid;
+}
+.content_presentacion button:hover{
+
+    cursor: pointer;
+    transform: scale(1.05);
 }

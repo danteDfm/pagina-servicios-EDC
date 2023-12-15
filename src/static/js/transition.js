@@ -23,6 +23,29 @@ observer.observe(miForm);
 
 
 
+// Obtén el elemento que deseas observar
+var presentacion = document.querySelector(".content_presentacion");
+
+// Función de devolución de llamada cuando el elemento está en la vista
+function manej(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            presentacion.style.animation = "aparecerArriba 1s ease-out forwards";
+          return;
+
+        } else {
+
+            console.log("El elemento ya no está en la vista");
+        }
+    });
+}
+
+// Configura el IntersectionObserver
+var observer = new IntersectionObserver(manej);
+
+// Observa el elemento
+observer.observe(presentacion);
+
 
 
 // Obtén el elemento que deseas observar
@@ -74,3 +97,12 @@ var observer = new IntersectionObserver(manejar);
 
 // Observa el elemento
 observer.observe(miElemento);
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+.area_transicion1{
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+}
+
+.card_transicion{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+.card_transicion img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+}
+.card_transicion div{
+    width: 50%;
+    height: 100%;
+  
+}
