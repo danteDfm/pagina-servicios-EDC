@@ -1,14 +1,12 @@
 .presentacion{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
    
     display: flex;
     justify-content: center;
-    align-items: start;
-
-    background-image: url("../img/pexels-piccinng-3075993 .jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    align-items: center;
+  
+ 
    position: relative;
   
 }
@@ -23,8 +21,8 @@
 }
 .content_presentacion{
     width: 70%;
- 
-    margin-top: 200px;
+   padding: 10px;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +33,7 @@
     
     opacity: 0;
     transform: translateY(50px);
-   
+
 }
 
 
@@ -55,23 +53,86 @@
 }
 .content_presentacion p{
    font-size: 20px;
-   width: 700px;
+   width: 800px;
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
 }
 .content_presentacion button{
-   font-size: 20px;
-   width: 500px;
-   text-align: center;
-  color: white;
-   background-color: rgba(240, 248, 255, 0);
-   border: 0px;
-  transition: 1s all;
-   border: 1px white solid;
-   margin-top: 10px;
-}
+    font-size: 20px;
+    width: 350px;
+    text-align: center;
+   color: white;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+   transition: 1s all;
+    border: 1px white solid;
+    margin-top: 10px;
+    position: absolute;
+    top: 90%;
+ }
+
 .content_presentacion button:hover{
 
     cursor: pointer;
     transform: scale(1.05);
 }
+
+
+.presentacion1{
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+ 
+   position: relative;
+
+    margin-bottom: 100px;
+  
+}
+.presentacion1 h1{
+
+   color: white;
+    margin: 20px;
+   width: 100%;
+ 
+  text-align: center;
+ 
+  font-size: 40px;
+ 
+}
+.presentacion1 .content_card_presentacion{
+
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height:auto;
+    position: relative;
+  
+   margin: 0%;
+   margin: 0%;
+  
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "uno dos" 
+                           "tres cuatro";
+  
+    gap: 20px;
+}
+.card_presentacion{
+
+    width: 560px;
+    height: 300px;
+    border: 1px red solid;
+    margin: 0%;
+
+    border-radius: 40px;
+}
+
+.card_presentacion1{ grid-area: "uno";}
+.card_presentacion2{ grid-area: "dos";}
+.card_presentacion3{ grid-area: "tres";}
+.card_presentacion4{ grid-area: "cuatro";}

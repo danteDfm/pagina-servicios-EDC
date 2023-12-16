@@ -27,7 +27,7 @@ const listCard = [
   },
   {
     img: ruta.concat('/sistema-html-concepto-sitio-web.jpg'),
-    titulo: "title",
+    titulo: "APP A MEDIDA",
     subtitulo: "subtitle",
     des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae cupiditate quos nesciunt enim excepturi. Unde officia commodi fugit doloribus sint dolore sed.",
     foot: "hace un mes",
