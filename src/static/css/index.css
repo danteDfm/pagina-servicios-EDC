@@ -125,33 +125,3 @@ body{
         display: none;
     }
 }
-
-.contactos{
-  
-    bottom: 20%;
-    position: fixed;
-    height: 450px;
-    width:  40px;
-    
-    z-index: 2;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-  border-radius: 0px 50px 50px 0px;
-}
-.contactos a{
-  
-   padding: 0%;
-   margin: 0%;
-}
-.facebook, .insta, .whattsapp, .link{
-    transition: 1s all;
-    width: 35px;
-    height: 35px;
-    padding: 0%;
-    margin: 0%;
-}
-.facebook:hover, .insta:hover, .whattsapp:hover, .link:hover{
-    transform: scale(1.1);
-}

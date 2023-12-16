@@ -3,8 +3,12 @@
     height: 520px;
     display: flex;
     overflow: hidden;
-
+   
+  align-items: center;
+  margin-bottom: 80px;
 }
+
+
 .content_form{
     height: 100%;
     width: 40%;
@@ -82,7 +86,8 @@
 
 .mision{
     
-    width: 60%;
+    width: 55%;
+    height: 400px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -91,6 +96,9 @@
    
     opacity: 0;
     transform: translateX(50px);
+
+   
+ 
     
 }
 .mision h1{
@@ -106,17 +114,96 @@
 }
 .mision p{
     font-family: Arial, Helvetica, sans-serif;
-    width: 980px;
+    width: 900px;
     padding: 5px;
     font-size: 20px;
-
+    text-align: center;
 }
 
 .pie_pagina{
-    height: 400px;
+    height: 80px;
     width: 100%;
     background-color: #1b33587b;
     backdrop-filter: blur(50px);
-    margin-top: 100px;
+   
+   position: relative;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+    
+}
 
+.area_prueba{
+
+    margin: 0%;
+
+    width: 100%;
+    height: auto;
+ 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+
+   
+    margin-bottom: 80px;
+}
+.area_prueba .herramientas{
+
+    margin: 0%;
+
+    width: 260px;
+    min-width: 200px;
+    height: 120px;
+  border: 1px rgb(0, 0, 0) solid;
+}
+
+@media(max-width:1535px){
+    
+    .area_prueba{
+
+    
+        flex-wrap: wrap;
+     
+    }
+
+}
+.img_py{background-image: url("../img/python-logo.png");}
+.img_ts{background-image: url("../img/ts2.png");}
+.img_post{background-image: url("../img/post2.png");}
+.img_angular{background-image: url("../img/angular.png");}
+.img_react{background-image: url("../img/react.png");}
+.img_ios{background-image: url("../img/ios.jpg");}
+
+.herramientas{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.contactos{
+
+   
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none ;
+}
+
+.instagram{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+}
+.derechos{
+    height: 100%;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

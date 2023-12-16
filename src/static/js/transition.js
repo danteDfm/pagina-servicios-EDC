@@ -3,6 +3,8 @@ var miForm = document.querySelector(".form_soli");
 
 // Función de devolución de llamada cuando el elemento está en la vista
 function manejarInterseccion(entries, observer) {
+
+    
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             
@@ -23,8 +25,13 @@ observer.observe(miForm);
 
 
 
+
+
+
 // Obtén el elemento que deseas observar
-var presentacion = document.querySelector(".content_presentacion");
+var presentacion = document.querySelector(".prueba");
+
+
 
 // Función de devolución de llamada cuando el elemento está en la vista
 function manej(entries, observer) {
@@ -45,6 +52,30 @@ var observer = new IntersectionObserver(manej);
 
 // Observa el elemento
 observer.observe(presentacion);
+
+var presentacion1 = document.querySelector(".prueba1");
+
+
+
+// Función de devolución de llamada cuando el elemento está en la vista
+function manej1(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            presentacion1.style.animation = "aparecerArriba 1s ease-out forwards";
+          return;
+
+        } else {
+
+            console.log("El elemento ya no está en la vista");
+        }
+    });
+}
+
+// Configura el IntersectionObserver
+var observer = new IntersectionObserver(manej1);
+
+// Observa el elemento
+observer.observe(presentacion1);
 
 
 

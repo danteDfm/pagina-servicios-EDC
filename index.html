@@ -45,13 +45,6 @@
             </div>
         </nav>
 
-        <div class="contactos">
-            <a href="#"><img src="./src/static/img/facebook_2504903.png"   class="facebook"></a>
-            <a href="#"><img src="./src/static/img/instagram_2504918.png" class="insta"></a>
-            <a href="#"><img src="./src/static/img/linkedin_2504923.png"   class="link"></a>
-            <a href="#"><img src="./src/static/img/whatsapp_2504957.png"  class="whattsapp"></a>
-        </div>
-
         <div>
             <section class="main">
                 <div class="title_main">
@@ -68,7 +61,7 @@
 
             <section class="presentacion">
                 
-                <div class="content_presentacion">
+                <div class="content_presentacion prueba">
                     <h1>TU ALIADO TECNOLOGICO</h1>
                     <p>
                         Construimos soluciones tecnológicas a medida, desde aplicaciones robustas hasta arquitecturas de sistemas escalables.
@@ -84,7 +77,7 @@
 
             <section class="servicios">
 
-                <div class="content_title_servcicio">
+                <div class="content_title_servcicio prueba1">
                     <h1>Soluciones tecnologicas a tu medida</h1>
                     <p>Somos una empresa en expansión especializada en desarrollo, con un equipo dedicados y apasionados en dar las mejores soluciones.
                      No solo nos preocupamos por el producto final, sino que también lo construimos teniendo en cuenta tu visión y tus necesidades.</p>
@@ -98,9 +91,15 @@
                 </div>
             </section>
 
-            <section class="area_transicion2">
-
-            </section>
+            
+        <div class="area_prueba">
+            <div class="img_py herramientas"></div>
+            <div class="img_ts herramientas"></div>
+            <div class="img_post herramientas"></div>
+            <div class="img_angular herramientas"></div>
+            <div class="img_react herramientas"></div>
+            <div class="img_ios herramientas"></div>
+        </div>
 
             <section class="formulario">
               <div class="content_form">
@@ -109,16 +108,16 @@
                         <h1>solicitud</h1>
                     </div>
                     <div class="input_form">
-                            <input placeholder="nombre completo">
-                            <input placeholder="gmail">
-                            <input placeholder="numero">
-                            <select>
+                            <input type="text" placeholder="nombre completo" required minlength="3">
+                            <input type="email" placeholder="gmail" required minlength="5">
+                            <input type="number" placeholder="numero" required minlength="9">
+                            <select required>
                                 <option hidden>servicio</option>
                                 <option>servicio1</option>
                                 <option>servicio2</option>
                                 <option>servicio3</option>
                             </select>
-                            <textarea name="descripcion" placeholder="cuentanos tu idea" cols="30" rows="10"></textarea>
+                            <textarea required name="descripcion" placeholder="cuentanos tu idea" cols="30" rows="10"></textarea>
                             <button>Enviar</button>
                     </div>
                 </form>
@@ -132,8 +131,19 @@
             </section>
         </div>
 
+
         <footer class="pie_pagina">
-           
+            
+            <div class="derechos">
+                <p>&copy; edcsoftware.cl, Inc. All rights reserved.</p>
+            </div>
+
+            <div class="contactos">
+                <li><a href="#"><img src="./src/static/img/instagram_2504918.png" class="instagram"></a></li>
+                <li><a href="#"><img src="./src/static/img/facebook_2504903.png" class="instagram"></a></li>
+                <li><a href="#"><img src="./src/static/img/linkedin_2504923.png" class="instagram"></a></li>
+                <li><a href="#"><img src="./src/static/img/whatsapp_2504957.png" class="instagram"></a></li>
+            </div>
 
         </footer>
 

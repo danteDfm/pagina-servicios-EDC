@@ -6,10 +6,11 @@
     justify-content: center;
     align-items: start;
 
-    background-image: url("../img/pexels-piccinng-3075993.jpg");
+    background-image: url("../img/pexels-piccinng-3075993 .jpg");
     background-size: cover;
     background-attachment: fixed;
    position: relative;
+  
 }
 .presentacion::after{
     width: 100%;
@@ -22,7 +23,7 @@
 }
 .content_presentacion{
     width: 70%;
-  
+ 
     margin-top: 200px;
     display: flex;
     flex-direction: column;
@@ -50,6 +51,7 @@
 .content_presentacion h1{
    font-size: 30px;
    font-family: roboto;
+   margin: 0%;
 }
 .content_presentacion p{
    font-size: 20px;
@@ -66,6 +68,7 @@
    border: 0px;
   transition: 1s all;
    border: 1px white solid;
+   margin-top: 10px;
 }
 .content_presentacion button:hover{
 
