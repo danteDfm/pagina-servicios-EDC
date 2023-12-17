@@ -137,7 +137,7 @@
     
     background-image: radial-gradient(circle at 4.55% -4.17%, #27365b 0, #1f3259 50%, #152e57 100%);
 
-    border-radius: 40px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -147,10 +147,10 @@
 }
 
 
-.card_presentacion1{ grid-area: "uno";}
-.card_presentacion2{ grid-area: "dos";}
-.card_presentacion3{ grid-area: "tres";}
-.card_presentacion4{ grid-area: "cuatro";}
+.card_presentacion1{ grid-area: "uno";     border-radius: 40px 40px 0px 40px;}
+.card_presentacion2{ grid-area: "dos";     border-radius: 40px 40px 40px 0px;}
+.card_presentacion3{ grid-area: "tres";     border-radius: 40px 0px 40px 40px;}
+.card_presentacion4{ grid-area: "cuatro";     border-radius: 0px 40px 40px 40px;}
 
 
 
