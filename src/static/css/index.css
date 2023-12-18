@@ -6,7 +6,9 @@ body{
     padding: 0%;
     color: white;    
     background-color: #000000;
-  
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
 }
 
 
@@ -113,6 +115,8 @@ body{
     justify-content: center;
     align-items: end;
     cursor: pointer;
+    color: white;
+    text-decoration: dashed;
 }
 
 .list-nav li a:hover::after{

@@ -1,3 +1,9 @@
+
+<?php
+
+phpinfo();
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,9 +16,13 @@
     <link href="./src/static/css/footer.css" rel="stylesheet">
     <link href="./src/static/css/presentacion.css" rel="stylesheet">
     <link href="./src/static/css/area_transicion.css" rel="stylesheet">
+    <link href="./src/static/css/movil_first.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="./src/static/css/all.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -22,8 +32,31 @@
 
     <title>EDCS</title>
 </head>
-<body>
+<body>  
 
+    
+
+    <div class="nav_cel">
+       
+    </div>
+
+    <div class="content_nav_cel">
+
+        <div class="btn_nav">
+            <span class="material-icons">
+              menu
+            </span>
+        </div>
+
+
+        <ul class="list_nav_movil">
+            <li><a href="#main">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5501/src/pages/nosotros.html">nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#footer" style="z-index: 5;">Contactar</a></li>
+        </ul>
+
+    </div>
 
         <nav class="nav">
             
@@ -35,10 +68,10 @@
                 </div>
            
             <ul class="list-nav">
-                <li><a>Inicio</a></li>
-                <li><a>Nosotros</a></li>
-                <li><a>Servicios</a></li>
-                <li><a>Contactar</a></li>
+                <li><a href="#main" class="ancord_nav">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5501/src/pages/nosotros.html" class="ancord_nav">Nosotros</a></li>
+                <li><a href="#servicios" class="ancord_nav">Servicios</a></li>
+                <li><a href="#footer" class="ancord_nav" >Contactar</a></li>
             </ul>
             <div class="redes">
 
@@ -46,7 +79,7 @@
         </nav>
 
         <div>
-            <section class="main">
+            <section class="main" id="main">
                 <div class="title_main">
                    <div class="title_main_content">
                     <h1>EDC SOFTWARE</h1>
@@ -60,7 +93,7 @@
             </section>
 
             
-            <section class="servicios">
+            <section class="servicios" id="servicios">
 
                 <div class="content_title_servcicio prueba1">
                     <h1>Soluciones tecnologicas a tu medida</h1>
@@ -86,11 +119,34 @@
                          Nuestra experiencia en desarrollo backend, frontend y diseño de API garantiza la creación de plataformas sólidas y eficientes. 
                       
                     </p>
-                    <button>Cuentanos mas sobre tu proyecto &rarr;</button>
+                    <button class="redireccion">Cuentanos mas sobre tu proyecto &rarr;</button>
                 </div>
              
             </div>
 
+
+            <!-- <section class="portafolio">
+                
+                <div class="project">
+                   <div class="project1">
+                        <img src="./src/static/img/abogados.png">
+                        <h1>proyecto abogados</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore laborum accusamus dicta est unde quasi illo ex nemo beatae cumque quis, optio sunt excepturi labore cupiditate quas officia ipsum!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore laborum accusamus dicta est unde quasi illo ex nemo beatae cumque quis, optio sunt excepturi labore cupiditate quas officia ipsum!
+                        </p>
+                   </div>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><button>projecto 1</button></li>
+                        <li><button>projecto 2</button></li>
+                        <li><button>projecto 3</button></li>
+                        <li><button>projecto 4</button></li>
+                    </ul>
+                </div>
+            </section> -->
 
             <div class="presentacion1">
                 <h1 class="title_filosofia">nuestra filosofia</h1>
@@ -99,7 +155,7 @@
                     <div class="card_presentacion1 card_presentacion">
                         
                           <div>
-                            <img src="./src/static/img/docker.png">
+                            <img src="./src/static/img/excelencia.png">
                           </div>
                         
                         <h1>Excelencia</h1>
@@ -109,31 +165,31 @@
                     <div class="card_presentacion2 card_presentacion">
                         
                           <div>
-                            <img src="./src/static/img/docker.png">
+                            <img src="./src/static/img/eficiencia.png">
                           </div>
                         
                         <h1>Eficiencia</h1>
-                        <p>como empresa nos dedicamos a la calidad del codigo y crear el mejor producto posible para cubrir sus necesidades.</p>
+                        <p>moldeamos la excelencia para crear productos excepcionales justo en el momento en que mas lo necesita.</p>
                 
                     </div>
                     <div class="card_presentacion3 card_presentacion">
                         
                           <div>
-                            <img src="./src/static/img/docker.png">
+                            <img src="./src/static/img/inno.png">
                           </div>
                         
                         <h1>Innovacion</h1>
-                        <p>como empresa nos dedicamos a la calidad del codigo y crear el mejor producto posible para cubrir sus necesidades.</p>
+                        <p>esculpimos nuestros diseños con las tecnologias del mañana, donde la innovación se fusiona con la creatividad.</p>
                 
                     </div>
                     <div class="card_presentacion4 card_presentacion">
                         
                           <div>
-                            <img src="./src/static/img/docker.png">
+                            <img src="./src/static/img/com.png">
                           </div>
                         
                         <h1>Compromiso</h1>
-                        <p>como empresa nos dedicamos a la calidad del codigo y crear el mejor producto posible para cubrir sus necesidades.</p>
+                        <p>al momento de trabajar juntos, nosotros nos encargamos de que sus sueños transformen el futuro. </p>
                 
                     </div>
                    
@@ -161,15 +217,15 @@
             
         </div>
 
+ 
 
-
-		<section>
+		<section id="footer">
 			<div class="container">
 				<div class="footer-container">
 					<div class="column texto-contacto" style="text-align: start;">
 						<h3 class="text-uppercase">¿Necesitas ayuda?</h3>
 						<p>
-							<span>Contáctate con Nosotros</span>
+							<span>Contáctate</span>
 							Comunícate con nosotros para poder asesorarte mejor, completando el formulario.
 						</p>
 
@@ -284,9 +340,20 @@
         
 
 
+        <script>
 
+            document.querySelector(".redireccion").addEventListener("click", ()=>{
+            location.href ='http://127.0.0.1:5501/src/pages/peticiones.html';
+            })
+            
+            document.querySelector(".ms_informacion").addEventListener("click", ()=>{
+            location.href ='http://127.0.0.1:5501/src/pages/nosotros.html';
+            })
+            
+        </script>
         <script src="./src/static/js/card.js"></script>
         <script src="./src/static/js/index.js"></script>
+        <script src="./src/static/js/nav_cel.js"></script>
        
  </body>
 </html>
