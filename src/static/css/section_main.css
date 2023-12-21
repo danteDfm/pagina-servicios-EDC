@@ -1,0 +1,144 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.nav{
+            
+    background-color: #121e31;
+    
+}
+
+.section_main{
+
+    width: 80%;
+    min-height: 60vh;
+    background-image: url("../img/git.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+.section_main::before{
+
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #0000003e;
+     
+}
+
+
+.section_main h1, p{   
+    z-index: 1;
+}
+.section_main h1{   
+    font-size: 2.5rem;
+    font-family: roboto;
+    font-weight: 700;
+    margin: 0%;
+}
+.section_main p{   
+
+    font-size: 1.2rem;
+    margin: 0%;
+}
+.section_main::after{
+    
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #1b33584b;
+
+}
+
+
+
+
+.pie_pagina{
+
+    width: 100%;
+    height: 100px;
+    background-color: #1b33587b;
+    display: flex;
+   
+}
+
+.pie_pagina div{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.derechos_reservados{
+    display: flex;
+    justify-content: center;
+}
+
+.derechos_reservados p{
+    padding:10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list_contact{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    
+}
+.contact{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+
+}
+
+
+@media(max-width:1000px){
+    
+    .section_main{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+}
+
+@media(max-width:770px){
+ 
+  
+    .pie_pagina{
+
+        height: 100px;
+        flex-direction: column;
+
+    }
+
+    .pie_pagina div{
+    
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     }   
+
+}

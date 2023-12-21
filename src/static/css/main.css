@@ -153,3 +153,476 @@
     }
 }
 
+
+
+
+
+
+
+/* area de servicio  */
+
+
+.servicios{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-size: cover;
+
+ 
+}
+
+.content_title_servcicio{
+
+    background-color: #1b33587b;
+    width: 90%;
+    height:340px;
+    border-radius: 20px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0%;
+  
+   
+}
+
+
+.content_title_servcicio h1{
+    
+
+   font-size: 2.2rem;
+   color: white;
+   font-family: roboto;
+ 
+}
+.content_title_servcicio p{
+  
+    width: 700px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media(max-width:850px){
+    .content_title_servcicio{
+        padding: 10px;
+        height: 300px;
+    }
+    .content_title_servcicio h1{
+    
+
+        font-size: 1.5rem;
+        text-align: center;
+        
+      
+     }
+     .content_title_servcicio p{
+  
+        
+      font-size: 16px;
+      display: flex;
+       padding: 10px;
+       width: 80%;
+      
+       
+        
+     
+    }
+
+}
+
+
+.card_servicios{
+     
+    width: 95%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    
+    width: 300px;
+    height: 400px;
+  
+    color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+    transition: transform 0.1s ease;
+
+    background-color: rgba(10, 18, 36, 0.686);
+    box-shadow: 0px 0px 1px white ;
+   
+
+
+}
+
+@media(max-width:1700px){
+    
+    .card{
+        width: 250px;
+    }
+
+}
+.card:hover{
+    transform:translateY(-10px);
+    cursor: pointer;
+}
+
+
+.img_card{
+   width: 100%;
+   height: 45%;
+  
+}
+.img_card img{
+
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.descripcion_card{
+    width: 100%;
+    height: 55%;
+
+}
+.descripcion_card .title_card{
+    width: 100%;
+    height: 30%;
+    margin: 0%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.descripcion_card .title_card .title_card-h1 , .title_card-p{
+   
+    margin: 0%;
+    padding: 0%;
+ 
+    width: 100%;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+  
+}
+.descripcion_card .title_card  .title_card-p{
+   
+    font-size: 12px;
+ 
+}
+.descripcion_card .descripcion_card_content{
+    width: 100%;
+    height: 60%;
+    margin: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.651);
+  
+    
+}
+.descripcion_card .descripcion_card_content p{
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 0%;
+    height: 100%;
+    font-size: 13px;
+    letter-spacing: 1px;
+   
+}
+.descripcion_card .foot_card{
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+   
+    
+    padding: 0%;
+    text-align: end;
+    
+}
+.descripcion_card .foot_card p{
+  
+    margin: 0%;
+    padding: 0%;
+    margin-right: 10px;
+    
+    width: auto;
+    
+}
+
+
+
+
+
+
+/* area presentacion */
+
+.presentacion {
+    width: 100%;
+    height: 50vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .presentacion::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  
+    content: "";
+    background-color: rgba(0, 0, 0, 0.301);
+  }
+  .content_presentacion {
+    width: 70%;
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    z-index: 1;
+  }
+  
+  @keyframes aparecerArriba {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content_presentacion h1 {
+    font-size: 2.2rem;
+    font-family: roboto;
+    margin: 0%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .content_presentacion p {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    padding: 10px;
+  }
+  .content_presentacion button {
+    font-size: 20px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    transition: 1s all;
+    border: 1px white solid;
+    margin: 10px;
+  
+    top: 90%;
+  }
+  
+  .content_presentacion button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  @media (max-width: 850px) {
+    .content_presentacion {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .content_presentacion h1 {
+      font-size: 1.5rem;
+    }
+  
+    .content_presentacion p {
+      font-size: 16px;
+      width: 100%;
+    }
+  
+    .content_presentacion button {
+      font-size: 16px;
+      width: 200px;
+    }
+  }
+  
+  .presentacion1 {
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+  
+    align-items: center;
+    flex-direction: column;
+  
+    position: relative;
+  
+    margin-bottom: 100px;
+  }
+  
+  .presentacion1 .title_filosofia {
+    color: white;
+    margin: 30px;
+    font-family: roboto;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  
+    font-size: 2.2rem;
+  }
+  .presentacion1 .content_card_presentacion {
+    position: relative;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    position: relative;
+  
+    margin: 0%;
+    margin: 0%;
+  
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "uno dos"
+      "tres cuatro";
+  
+    gap: 20px;
+  }
+  .card_presentacion {
+    width: 500px;
+    height: 250px;
+  
+    margin: 0%;
+  
+    background-image: radial-gradient(
+      circle at 4.55% -4.17%,
+      #27365b 0,
+      #1f3259 50%,
+      #152e57 100%
+    );
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .card_presentacion1 {
+    grid-area: "uno";
+    border-radius: 40px 40px 0px 40px;
+  }
+  .card_presentacion2 {
+    grid-area: "dos";
+    border-radius: 40px 40px 40px 0px;
+  }
+  .card_presentacion3 {
+    grid-area: "tres";
+    border-radius: 40px 0px 40px 40px;
+  }
+  .card_presentacion4 {
+    grid-area: "cuatro";
+    border-radius: 0px 40px 40px 40px;
+  }
+  
+  .card_presentacion div {
+    width: 100%;
+    height: 70px;
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+  }
+  .card_presentacion div img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
+  }
+  .card_presentacion h1 {
+    width: 100%;
+    font-family: roboto;
+    font-weight: 400;
+    margin: 0%;
+    text-align: start;
+    font-size: 25px;
+    padding: 10px;
+    letter-spacing: 1px;
+  }
+  .card_presentacion p {
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin: 0%;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.652);
+  }
+  
+  @media (max-width: 1200px) {
+    .card_presentacion {
+      width: 400px;
+      height: 200px;
+    }
+    .card_presentacion div img {
+      width: 40px;
+      height: 40px;
+    }
+    .card_presentacion h1 {
+      font-size: 20px;
+    }
+  
+    .card_presentacion p {
+      font-size: 17px;
+    }
+  }
+  
+  @media (max-width: 930px) {
+    .presentacion1 .content_card_presentacion {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
+  
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .presentacion1 .title_filosofia {
+      font-size: 1.5rem;
+    }
+  
+    .card_presentacion {
+      width: 350px;
+      height: 220px;
+      border-radius: 0%;
+    }
+  
+    .card_presentacion h1 {
+      font-size: 18px;
+    }
+  
+    .card_presentacion p {
+      font-size: 16px;
+    }
+  }
+  
