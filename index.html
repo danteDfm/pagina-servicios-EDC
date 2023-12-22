@@ -246,16 +246,17 @@ phpinfo();
 
 					<div class="column columna-formulario-contacto">
 
-						<form>
+						<form method="post" class="form_email">
+
 							<div class="form-row">
 								<div class="input-container form-contro">
-									<input type="text" id="input" required="">
+									<input type="text" id="input" required name="nombre" class="campo">
 									<label for="input" class="label">Nombre(s)</label>
 									<div class="underline"></div>
 								</div>
 								
 								<div class="input-container form-contro">
-									<input type="text" id="input" required="">
+									<input type="text" id="input" required name="apellido" class="campo">
 									<label for="input" class="label">Apellido(s)</label>
 									<div class="underline"></div>
 								</div>
@@ -263,21 +264,21 @@ phpinfo();
 						
 							<div class="form-row">
 								<div class="input-container form-contro">
-									<input type="text" id="input" required="">
+									<input type="text" id="input" required name="email" class="campo">
 									<label for="input" class="label">E-mail</label>
 									<div class="underline"></div>
 								</div>
 						
 								<div class="input-container form-contro">
-									<input type="text" id="input" required="">
-									<label for="input" class="label">Telefono</label>
+									<input type="text" id="input" required="" name="telefono" class="campo">
+									<label for="input" class="label" required name="telefono">Telefono</label>
 									<div class="underline"></div>
 								</div>
 							</div>
 						
 							<div class="form-row">
 								<div class="input-container input-mensaje" style="width: 520px;">
-									<input type="text" id="input" required="">
+									<input type="text" id="input" required name="mensaje" class="campo">
 									<label for="input" class="label">Mensaje</label>
 									<div class="underline"></div>
 								</div>
@@ -292,8 +293,6 @@ phpinfo();
 									</div>
 								</button>
 							</div>
-						
-
 						</form>
 						
 
@@ -351,6 +350,7 @@ phpinfo();
             
         </script>
         <script src="./src/static/js/card.js"></script>
+        <script src="./src/static/js/form.js"></script>
         <script src="./src/static/js/index.js"></script>
         <script src="./src/static/js/nav_cel.js"></script>
        

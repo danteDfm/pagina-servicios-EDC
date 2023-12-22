@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0%;
@@ -8,7 +9,7 @@ body{
     background-color: #000000;
     overflow-x: hidden;
 
-    scroll-behavior: smooth;
+  
 }
 
 
