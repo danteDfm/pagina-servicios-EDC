@@ -313,8 +313,8 @@
   
 }
 
-button:hover {
- 
+.btn-enviar:hover {
+  background-color: rgba(52, 223, 52, 0.724);
 }
 
 @media screen and (max-width: 768px) {
