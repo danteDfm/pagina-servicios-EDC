@@ -5,35 +5,35 @@ const ruta = './src/static/img';
 let card = '';
 const listCard = [
   {
-    img: ruta.concat('/sistema-html-concepto-sitio-web.jpg'),
+    img: ruta.concat('/web.jpg'),
     titulo: "APP WEB",
     subtitulo: "NODE - MONGO - PHP",
     des: `Como compañia les ofrecemos el mejor servicio posible en la creacion de aplicaciones web de todo tipo, tanto productivas, empresariales y dinamicas.`,
     foot: "hace un mes",
   },
   {
-    img: ruta.concat('/sistema-html-concepto-sitio-web.jpg'),
+    img: ruta.concat('/abogados.png'),
     titulo: "PAGINAS WEB",
     subtitulo: "CSS - HTML - JS",
     des: `Nuestras paginas web siempre tienen nuestro sello de calidad, ofrecemos diseños unicos y responsivos donde el cliente puede ver reflejado su propio trabajo. `,
     foot: "hace un mes",
   },
   {
-    img: ruta.concat('/sistema-html-concepto-sitio-web.jpg'),
+    img: ruta.concat('/movil.jpg'),
     titulo: "APP MOVIL",
     subtitulo: "REACT NATIVE",
     des: `Nuestras app movil son eficientes rapidas y con un estilo unico, nos gusta los desafios y por eso extendemos nuestros servicios, danos tu idea y la desarrollaremos.`,
     foot: "hace un mes",
   },
   {
-    img: ruta.concat('/sistema-html-concepto-sitio-web.jpg'),
+    img: ruta.concat('/medida.png'),
     titulo: "APP A MEDIDA",
     subtitulo: "PYTHON, NODE, REACT",
     des: `Creamos paginas, aplicaciones web, aplicaciones movil a medida con tus espesificaciones e ideas.`,
     foot: "hace un mes",
   },
   {
-    img: ruta.concat('/sistema-html-concepto-sitio-web.jpg'),
+    img: ruta.concat('/reportabilidad.png'),
     titulo: "REPORTABILIDAD",
     subtitulo: "DASHBOARD",
     des: `Visualizar su información de manera clara y concisa para que pueda comprender su desempeño y tomar decisiones más informadas.`,

@@ -1,221 +1,191 @@
-
+.medusa{
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/medusa.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1 ;
+}
 
 
 .sec_form{
     width: 100%;
     min-height: auto;
- 
+
     display: flex;
    
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    
-    margin-top: 50px;
-    margin-bottom: 100px;
-    
+    flex-direction: row-reverse;
+
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+
+ 
+
 }
-.formulario_peticiones{
-    width: 50%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  
-}
+
 
 /* informacion */
 
 
-.img_informacion{
-    width: 50%;
-    height: auto;
-   
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-/* 
-    background-image: url("../static/img/medusa.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-
-    transform: translateY(30px);
-
-  
-}
-
-
-.content_informacion{
-    z-index: 1;
-  
-    width: 95%;
-    justify-content: end;
-    align-items: end;
-    flex-direction: column;
-    display: flex;
-  transform: translateY(25px);
-
-}
-.content_informacion p{
+.contactos{
     
-    padding: 20px;
-    font-size: 1.2rem;
-    width: 100%;
-    letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffffd0;
-    margin: 0%;
-}
-.content_informacion h1{
     
+    display: grid;
+    width: 500px;
+    height: 300px;
     text-align: center;
-    width: 100%;
-        margin: 0%;
-    font-size: 2.5rem;
-    font-family: roboto;
-    font-weight: 600;
+    padding: 0%;
     
-
+     
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: "title title"
+                         "contacto1 contacto2"
+                         "contacto3 contacto4";
+}
+.title_contact{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    font-size: 2.2rem;
+    font-weight: 100;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+ 
+   
+}
+.contact1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.contact2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.contact3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+}
+.contact4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+   
 }
 
+.ct1 h2{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+   margin: 0%;
+    font-weight: 100;
+}
+.ct1 p{
+    margin: 0%;
+    font-size: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+  
+    border: 1px red solid;
+   
 
-/* formulario peticiones */
-
+}
+/* 
+formulario */
 
 .content_form{
-
    
-    width: 90%;
-    border-radius: 10px;
-    box-shadow: 10px 10px 30px #000000;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    backdrop-filter: blur(30px);
+    background-size: cover;
+    box-shadow: 0px 0px 3px white;
+    width: 600px;
+    height: 400px;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(50px);
-      
-    
+    border-radius: 10px;
+
 }
 .content_form h1{
-    
-    font-size: 2.5rem;
-    font-family: roboto;
-    font-weight: 600;
-    
+   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 100;
+  
 }
 
-.inp1, .inp2{
-    width: 100%;
-    border: 1px white solid;
-    display: flex;
-    justify-content: center;
+.inp1{
+
+    width: 550px;
     margin: 5px;
-}
+    display: flex;
+    gap: 5px;
 
-.inp1 input, .inp2 input{
-    width: 50%;
-    height: 40px;
     
 }
+.inp1 input{
+
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.inp2{
+
+    width: 550px;
+    margin: 5px;
+    display: flex;
+    gap: 5px;
+}
+.inp2 input{
+
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .content_form textarea{
-    width: 100%;
-    margin: 5px;
+    width: 550px;
     height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 .content_form button{
-    width: 100%;
+    width: 550px;
+    height: 40px;
     margin: 5px;
-    height: 35px;
+    border-radius: 10px;
     border: 0px;
     transition: 1s;
-    
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.815);
 }
 .content_form button:hover{
-
-    background-color: #121e31;
-    color: white;
+    
     cursor: pointer;
-    
-}   
-
-
-@media(max-width:1219px){
-    .sec_form{
-        flex-direction: column-reverse;
-   
-    }
-
-    .img_informacion{
-        width: 70%;
-        height: auto;
-        
-    }
-    .formulario_peticiones{
-        width: 70%;
-        height: 60vh;
-       margin-top: 100px;
-        
-    }
-    .content_form{
-    width: 100%;}
-
-
+    box-shadow: 0px 0px 10px white;
 }
 
 
-@media(max-width:400px){
-    
-    
-   
-    .content_informacion p{
-    
-        padding:5px;
-        letter-spacing: 0.5px;
-        font-size: 16px;
-       width: 90%;
-       margin: 10px;
-    }
-  
-    .img_informacion{
-        width: 100%;
-        height: auto;
-        
-        
-    }
-    .formulario_peticiones{
-        width: 100%;
-        height: 40vh;
-       margin-top: 100px;
-        
-    }
-    .content_form{
-    width: 100%;}
-
-    .content_form h1{
-    
-    font-size: 1.5rem;
-    }
-    .section_main h1{   
-    font-size: 1rem;
-    
-}
-
-.section_main p{   
-
-    font-size: 1rem;
-    
+@media(max-width: 1116px){
+    .contactos{
+        margin-bottom: 60px;
     }
 }
-
-    
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
--webkit-appearance: none; 
-margin: 0; 
-}
-input[type=number] { -moz-appearance:textfield; }
-
